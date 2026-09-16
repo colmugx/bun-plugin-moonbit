@@ -1,0 +1,18 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "mbtplug/tiny/lib"
+
+// Values
+pub fn double_x(Point) -> Int
+
+// Errors
+
+// Types and methods
+pub(all) struct Point {
+  x : Int
+  y : Int
+}
+pub fn Point::Point(Int, Int) -> Self
+
+// Type aliases
+
+// Traits

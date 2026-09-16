@@ -1,0 +1,5 @@
+// workspace fixture
+members = [
+  "./a",
+  "./b",
+]

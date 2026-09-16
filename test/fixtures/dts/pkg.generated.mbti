@@ -1,0 +1,29 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "x/dts-fixture"
+
+// Values
+pub fn double_x(Point, Int) -> Int
+
+pub fn set_cb(Point, JsCallback) -> String
+
+pub fn shutdown(Point) -> @js_async.Promise[Unit]
+
+pub fn scale_point(Point, Inner) -> Inner
+
+pub(all) struct Point {
+  x : Int
+  y : Int
+}
+pub fn Point::Point(Int, Int) -> Self
+
+pub(all) struct Runtime {
+  cache : Map[String, String]
+}
+pub fn Runtime::Runtime(Point) -> Self
+
+pub(all) struct Inner {
+  scale : Int
+}
+
+#external
+pub type JsCallback

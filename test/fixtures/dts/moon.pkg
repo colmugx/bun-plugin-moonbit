@@ -1,0 +1,16 @@
+options(
+  supported_targets: "+js",
+  link: {
+    "js": {
+      "format": "esm",
+      "exports": [
+        "Point",
+        "double_x",
+        "set_cb",
+        "shutdown",
+        "scale_point",
+        "Runtime",
+      ],
+    },
+  },
+)

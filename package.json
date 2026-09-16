@@ -1,0 +1,37 @@
+{
+  "name": "bun-plugin-moonbit",
+  "author": {
+    "name": "colmugx",
+    "url": "https://github.com/colmugx"
+  },
+  "version": "0.1.0-beta.1",
+  "description": "Bun plugin and tooling for MoonBit JS targets: mbt: imports with incremental moon builds, generated TypeScript declarations, bundle size attribution",
+  "type": "module",
+  "files": ["src"],
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./preload": "./src/preload.ts",
+    "./cli": "./src/cli.ts"
+  },
+  "bin": {
+    "bun-plugin-moonbit": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "bun",
+    "moonbit",
+    "plugin",
+    "bundler",
+    "typescript"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/bun": "^1.4.0",
+    "typescript": "^7.0.2"
+  }
+}
